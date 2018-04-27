@@ -72,3 +72,6 @@ Route::post('fetch_transaction_details','PaymentController@transactionDetails');
 Route::post('save_the_payment','PaymentController@savePayment');
 Route::get('completed_payments','PaymentController@displayCompletedPayments');
 Route::get('all_payments','PaymentController@displayAllPayments');
+
+
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
